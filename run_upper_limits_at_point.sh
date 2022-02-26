@@ -14,5 +14,5 @@ law run PlotUpperLimitsAtPoint \
     --workers 8 \
     --use-snapshot False \
     --unblinded True \
-    --remove-output 10,a,y \
+    --remove-output 0,a,y \
     --datacard-order 4,3,2,1,0
