@@ -4,11 +4,11 @@
 ```bash
 mkdir ~/work/HH
 ```
-- Setup inference by following instructions here: https://gitlab.cern.ch/hh/tools/inference#1-source-the-setup
+- Setup inference as follows
   - Set up the environment in a new folder with a clean environment (no `cmsenv`, ETC.)
   - Use `some_name` as the name of the environment.
 ```bash
-git clone ssh://git@gitlab.cern.ch:7999/hh/tools/inference.git
+git clone -b hh_model_boosted ssh://git@gitlab.cern.ch:7999/woodson/inference.git
 cd inference
 source setup.sh some_name
 ```
@@ -34,13 +34,15 @@ export MULTINAMES="Combined,ggF cat. 1,ggF cat. 2,ggF cat. 3,VBF cat."
 export MODEL_BOOSTED="hh_model_boosted.model_boosted"
 export VERSION="postapproval"
 ```
-- Checkout this repo inside of `inference`
+- Checkout this repo outside of `inference`
 ```bash
+cd ..
 git clone git@github.com:LPC-HH/inference_scans.git
 ```
 - Finally, from the `inference_scans` directory in `screen` or `tmux`, run the script you want, e.g.:
 ```bash
+cd inference
 source setup.sh some_name # required before running a scan
-cd inference_scans
+cd ../inference_scans
 source run_likelihood_scan_2d_kl_c2v.sh
 ```
