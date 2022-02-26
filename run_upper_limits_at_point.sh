@@ -11,7 +11,7 @@ law run PlotUpperLimitsAtPoint \
     --datacard-names "$MULTINAMES" \
     --x-log \
     --campaign run2 \
-    --use-snapshot False \
+    --use-snapshot True \
     --unblinded True \
     --remove-output 0,a,y \
     --datacard-order 4,3,2,1,0

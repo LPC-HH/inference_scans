@@ -9,7 +9,7 @@ law run PlotPullsAndImpacts \
     --PullsAndImpacts-workflow "htcondor" \
     --PullsAndImpacts-tasks-per-job 10 \
     --unblinded True \
-    --use-snapshot False \
+    --use-snapshot True \
     --parameters-per-page 40 \
     --order-by-impact \
     --file-types "pdf,png" \

@@ -14,7 +14,7 @@ law run PlotMultipleLikelihoodScans \
     --shift-negative-values \
     --recompute-best-fit \
     --unblinded False,True,False,True,False,True \
-    --use-snapshot False \
+    --use-snapshot True \
     --Snapshot-workflow "local" \
     --remove-output 0,a,y \
     --y-log False

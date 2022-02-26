@@ -17,7 +17,7 @@ law run PlotLikelihoodScan \
     --shift-negative-values \
     --LikelihoodScan-workflow "htcondor" \
     --LikelihoodScan-tasks-per-job 4 \
-    --use-snapshot False \
+    --use-snapshot True \
     --remove-output 0,a,y \
     --interpolate-above 999 \
     --interpolate-nans
