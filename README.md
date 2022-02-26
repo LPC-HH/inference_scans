@@ -12,7 +12,7 @@ git clone -b hh_model_boosted ssh://git@gitlab.cern.ch:7999/woodson/inference.gi
 cd inference
 source setup.sh some_name
 ```
-- Add the following to your `.setups/some_name.sh` file:
+- Add the following to your `.setups/some_name.sh` file (datacards can be found here: https://gitlab.cern.ch/woodson/datacards_run2/-/tree/postapproval):
 ```bash
 # common settings and hook file for combination (important)                                                                                    
 export DHI_DATACARDS_RUN2="/eos/user/w/woodson/HH_fullRun2_fits/datacards_run2"
