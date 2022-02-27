@@ -32,6 +32,7 @@ export C4bcomb="bbbb_boosted_vbf/v4,bbbb_boosted_ggf/v6"
 export MULTICARDS="$C4bcomb:$C4bggf1:$C4bggf2:$C4bggf3:$C4bvbf"
 export MULTINAMES="Combined,ggF cat. 1,ggF cat. 2,ggF cat. 3,VBF cat."
 export MODEL_BOOSTED="hh_model_boosted.model_boosted"
+export MODEL_BOOSTED_MINIMAL="hh_model_boosted.model_boosted_minimal"
 export VERSION="postapproval"
 ```
 - Checkout this repo outside of `inference`

@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 law run PlotLikelihoodScan \
-    --hh-model "$MODEL_BOOSTED" \
+    --hh-model "$MODEL_BOOSTED_MINIMAL" \
     --version "$VERSION" \
     --datacards "$C4bcomb" \
     --pois kl,C2V \
-    --scan-parameters kl,-18,28,24:C2V,-1,3,17 \
+    --scan-parameters kl,-20,30,51:C2V,-0.5,2.5,25 \
     --show-parameters kt,CV \
     --file-types "pdf,png" \
     --campaign run2 \
@@ -16,8 +16,9 @@ law run PlotLikelihoodScan \
     --show-significances 1,2,3,5 \
     --shift-negative-values \
     --LikelihoodScan-workflow "htcondor" \
-    --LikelihoodScan-tasks-per-job 4 \
+    --LikelihoodScan-tasks-per-job 5 \
     --use-snapshot True \
+    --Snapshot-workflow "local" \
     --remove-output 0,a,y \
     --interpolate-above 999 \
     --interpolate-nans

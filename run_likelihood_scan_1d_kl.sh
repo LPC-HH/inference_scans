@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 law run PlotMultipleLikelihoodScans \
-    --hh-model "$MODEL_BOOSTED" \
+    --hh-model "$MODEL_BOOSTED_MINIMAL" \
     --version "$VERSION" \
     --multi-datacards "$C4bcomb:$C4bcomb:$C4bggf:$C4bggf:$C4bvbf:$C4bvbf" \
     --pois kl \
@@ -17,4 +17,5 @@ law run PlotMultipleLikelihoodScans \
     --use-snapshot True \
     --Snapshot-workflow "local" \
     --remove-output 0,a,y \
+    --show-parameters "kt,C2V,CV" \
     --y-log False

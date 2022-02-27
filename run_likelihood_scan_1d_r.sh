@@ -4,8 +4,8 @@ law run PlotMultipleLikelihoodScans \
     --hh-model "$MODEL_BOOSTED_MINIMAL" \
     --version "$VERSION" \
     --multi-datacards "$C4bcomb:$C4bcomb:$C4bggf:$C4bggf:$C4bvbf:$C4bvbf" \
-    --pois kl \
-    --scan-parameters C2V,-1,3,33 \
+    --pois r \
+    --scan-parameters r,-8,12,21 \
     --LikelihoodScan-workflow "htcondor" \
     --datacard-names "Comb. (exp.),Comb. (obs.),ggF (exp.),ggF (obs.),VBF (exp.),VBF (obs.)" \
     --campaign run2 \
@@ -17,5 +17,5 @@ law run PlotMultipleLikelihoodScans \
     --use-snapshot True \
     --Snapshot-workflow "local" \
     --remove-output 0,a,y \
-    --show-parameters "kl,kt,CV" \
+    --show-parameters "kl,kt,C2V,CV" \
     --y-log False

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 law run PlotUpperLimits \
-    --hh-model "$MODEL_BOOSTED" \
+    --hh-model "$MODEL_BOOSTED_MINIMAL" \
     --version "$VERSION" \
     --datacards "$C4bcomb" \
     --xsec fb \
