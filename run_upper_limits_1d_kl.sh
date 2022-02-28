@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 law run PlotUpperLimits \
-    --hh-model "$MODEL_BOOSTED_MINIMAL" \
+    --hh-model "$MODEL_BOOSTED_MINIMAL_ALT3" \
     --version "$VERSION" \
     --datacards "$C4bcomb" \
     --xsec fb \
     --pois r \
     --frozen-groups signal_norm_xsbr \
-    --scan-parameters kl,-14,28,43 \
+    --scan-parameters kl,-14,28,22 \
     --UpperLimits-workflow "htcondor" \
     --UpperLimits-tasks-per-job 1 \
     --file-types "pdf,png" \

@@ -32,7 +32,11 @@ export C4bcomb="bbbb_boosted_ggf/v6,bbbb_boosted_vbf/v4"
 export MULTICARDS="$C4bcomb:$C4bggf1:$C4bggf2:$C4bggf3:$C4bvbf"
 export MULTINAMES="Combined,ggF cat. 1,ggF cat. 2,ggF cat. 3,VBF cat."
 export MODEL_BOOSTED="hh_model_boosted.model_boosted"
+export MODEL_BOOSTED_CLOSURE="hh_model_boosted.model_boosted_closure"
 export MODEL_BOOSTED_MINIMAL="hh_model_boosted.model_boosted_minimal"
+export MODEL_BOOSTED_MINIMAL_ALT1="hh_model_boosted.model_boosted_minimal_ALT1"
+export MODEL_BOOSTED_MINIMAL_ALT2="hh_model_boosted.model_boosted_minimal_ALT2"
+export MODEL_BOOSTED_MINIMAL_ALT3="hh_model_boosted.model_boosted_minimal_ALT3"
 export VERSION="postapproval"
 ```
 - Checkout this repo outside of `inference`
