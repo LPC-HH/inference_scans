@@ -5,7 +5,7 @@ law run PlotMultipleLikelihoodScans \
     --version "$VERSION" \
     --multi-datacards "$C4bcomb:$C4bcomb:$C4bggf:$C4bggf:$C4bvbf:$C4bvbf" \
     --pois kl \
-    --scan-parameters kl,-14,28,43 \
+    --scan-parameters kl,-15,20,36 \
     --LikelihoodScan-workflow "htcondor" \
     --datacard-names "Comb. (exp.),Comb. (obs.),ggF (exp.),ggF (obs.),VBF (exp.),VBF (obs.)" \
     --campaign run2 \

@@ -19,6 +19,4 @@ law run PlotLikelihoodScan \
     --LikelihoodScan-tasks-per-job 5 \
     --use-snapshot True \
     --Snapshot-workflow "local" \
-    --remove-output 0,a,y \
-    --interpolate-above 999 \
-    --interpolate-nans
+    --remove-output 0,a,y

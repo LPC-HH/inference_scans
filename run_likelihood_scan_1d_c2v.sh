@@ -4,7 +4,7 @@ law run PlotMultipleLikelihoodScans \
     --hh-model "$MODEL_BOOSTED_MINIMAL" \
     --version "$VERSION" \
     --multi-datacards "$C4bcomb:$C4bcomb:$C4bggf:$C4bggf:$C4bvbf:$C4bvbf" \
-    --pois kl \
+    --pois C2V \
     --scan-parameters C2V,-1,3,33 \
     --LikelihoodScan-workflow "htcondor" \
     --datacard-names "Comb. (exp.),Comb. (obs.),ggF (exp.),ggF (obs.),VBF (exp.),VBF (obs.)" \
