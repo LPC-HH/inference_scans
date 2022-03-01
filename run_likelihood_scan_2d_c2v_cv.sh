@@ -2,7 +2,7 @@
 
 export DHI_CMS_POSTFIX="Supplementary"
 law run PlotLikelihoodScan \
-    --hh-model "$MODEL_BOOSTED" \
+    --hh-model "$MODEL_BOOSTED_CLOSURE" \
     --version "$VERSION" \
     --datacards "$C4bcomb" \
     --pois C2V,CV \
@@ -13,7 +13,6 @@ law run PlotLikelihoodScan \
     --x-max 2.5 \
     --show-parameters kl,kt \
     --show-best-fit False \
-    --show-box \
     --recompute-best-fit \
     --file-types "pdf,png" \
     --campaign run2 \
