@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 law run PlotUpperLimitsAtPoint \
-    --hh-model "$MODEL_BOOSTED_MINIMAL" \
+    --hh-model "$MODEL_BOOSTED_CLOSURE" \
     --version "$VERSION" \
     --multi-datacards "$MULTICARDS" \
     --file-types "pdf,png" \

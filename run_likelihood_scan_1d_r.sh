@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 law run PlotMultipleLikelihoodScans \
-    --hh-model "$MODEL_BOOSTED_MINIMAL" \
+    --hh-model "$MODEL_BOOSTED_CLOSURE" \
     --version "$VERSION" \
     --multi-datacards "$C4bcomb:$C4bcomb:$C4bggf:$C4bggf:$C4bvbf:$C4bvbf" \
     --pois r \
