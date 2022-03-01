@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 
+export DHI_CMS_POSTFIX="Supplementary"
 law run PlotUpperLimits \
     --hh-model "$MODEL_BOOSTED_CLOSURE" \
     --version "$VERSION" \
     --datacards "$C4bcomb" \
     --xsec fb \
-    --pois r \
+    --pois r_qqhh \
     --frozen-groups signal_norm_xsbr \
-    --scan-parameters kl,-14,28,22 \
+    --scan-parameters C2V,-2,2,17 \
     --UpperLimits-workflow "htcondor" \
     --UpperLimits-tasks-per-job 1 \
     --file-types "pdf,png" \
@@ -17,6 +18,6 @@ law run PlotUpperLimits \
     --Snapshot-workflow "local" \
     --y-log \
     --remove-output 0,a,y \
-    --show-parameters "kt,C2V,CV" \
+    --show-parameters "kl,kt,C2V" \
     --br bbbb \
     --save-ranges

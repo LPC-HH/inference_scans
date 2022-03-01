@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 
 law run PlotLikelihoodScan \
-    --hh-model "$MODEL_BOOSTED" \
+    --hh-model "$MODEL_BOOSTED_CLOSURE" \
     --version "$VERSION" \
     --datacards "$C4bcomb" \
-    --pois kl,C2V \
-    --scan-parameters kl,-20,30,51:C2V,-0.5,2.5,25 \
-    --y-min -0.5 \
-    --y-max 2.5 \
-    --x-min -18 \
-    --x-max 28 \
-    --show-parameters kt,CV \
+    --pois C2V,CV \
+    --scan-parameters C2V,-1,3,17:CV,-2,2,17 \
+    --y-min -1 \
+    --y-max 3 \
+    --x-min -2 \
+    --x-max 2 \
+    --show-parameters kl,kt \
     --show-best-fit False \
     --show-box \
     --recompute-best-fit \
