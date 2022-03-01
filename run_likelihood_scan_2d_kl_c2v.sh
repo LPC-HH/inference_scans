@@ -5,11 +5,11 @@ law run PlotLikelihoodScan \
     --version "$VERSION" \
     --datacards "$C4bcomb" \
     --pois kl,C2V \
-    --scan-parameters kl,-20,30,51:C2V,-0.5,2.5,25 \
+    --scan-parameters kl,-17,28,91:C2V,-0.5,2.5,49 \
     --y-min -0.5 \
     --y-max 2.5 \
-    --x-min -20 \
-    --x-max 30 \
+    --x-min -17 \
+    --x-max 28 \
     --show-parameters kt,CV \
     --show-best-fit False \
     --recompute-best-fit \

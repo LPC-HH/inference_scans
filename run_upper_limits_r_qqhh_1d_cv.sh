@@ -8,7 +8,7 @@ law run PlotUpperLimits \
     --xsec fb \
     --pois r_qqhh \
     --frozen-groups signal_norm_xsbr \
-    --scan-parameters CV,-2,2,17 \
+    --scan-parameters CV,-2,-1.9375,2:CV,-1.6875,-1.625,2:CV,-1.4375,-1.25,4:CV,-1.25,2,14 \
     --UpperLimits-workflow "htcondor" \
     --UpperLimits-tasks-per-job 1 \
     --file-types "pdf,png" \
