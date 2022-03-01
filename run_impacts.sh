@@ -2,7 +2,7 @@
 
 law run PlotPullsAndImpacts \
     --version "$VERSION" \
-    --hh-model "$MODEL_BOOSTED_MINIMAL" \
+    --hh-model "$MODEL_BOOSTED_CLOSURE" \
     --datacards "$C4bcomb" \
     --pois r \
     --mc-stats \

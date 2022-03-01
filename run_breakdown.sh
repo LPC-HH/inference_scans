@@ -41,7 +41,7 @@ for p in ""; do
     for g in "" "THY" "LUMI" "MCSTAT" "TTBAR" "BBTAG" "JMRJMSJERJES" "PU" "TRIG" "OTHER" "QCD"; do
         law run PlotLikelihoodScan \
             --version "$VERSION" \
-            --hh-model "$MODEL_BOOSTED_MINIMAL" \
+            --hh-model "$MODEL_BOOSTED_CLOSURE" \
             --datacards "$DCARDWGROUPS" \
             --pois "$POI" \
             --scan-parameters "$SCAN" \
