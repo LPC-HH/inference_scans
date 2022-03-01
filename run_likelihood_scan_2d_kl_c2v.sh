@@ -8,8 +8,8 @@ law run PlotLikelihoodScan \
     --scan-parameters kl,-20,30,51:C2V,-0.5,2.5,25 \
     --y-min -0.5 \
     --y-max 2.5 \
-    --x-min -18 \
-    --x-max 28 \
+    --x-min -20 \
+    --x-max 30 \
     --show-parameters kt,CV \
     --show-best-fit False \
     --recompute-best-fit \
@@ -28,5 +28,5 @@ law run PlotLikelihoodScan \
     --remove-output 0,a,y \
     --interpolate-above 999 \
     --interpolate-nans \
-    --interpolation-method rbf,multiquadric,0.001 
+    --interpolation-method rbf,multiquadric,0.2
 
