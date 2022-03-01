@@ -12,7 +12,6 @@ law run PlotLikelihoodScan \
     --x-max 28 \
     --show-parameters kt,CV \
     --show-best-fit False \
-    --show-box \
     --recompute-best-fit \
     --file-types "pdf,png" \
     --campaign run2 \
@@ -26,7 +25,8 @@ law run PlotLikelihoodScan \
     --workers 4 \
     --use-snapshot True \
     --Snapshot-workflow "local" \
-    --interpolation-method rbf \
+    --remove-output 0,a,y \
     --interpolate-above 999 \
     --interpolate-nans \
-    --remove-output 0,a,y
+    --interpolation-method rbf,multiquadric,0.001 
+
