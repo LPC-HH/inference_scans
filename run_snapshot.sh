@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-law run FitDiagnostics \
+law run Snapshot \
     --hh-model "$MODEL_BOOSTED_CLOSURE" \
     --version "$VERSION" \
     --datacards "$C4bcomb" \
-    --pois r \
-    --use-snapshot True \
+    --pois kl,C2V \
     --unblinded True \
     --remove-output 0,a,y
