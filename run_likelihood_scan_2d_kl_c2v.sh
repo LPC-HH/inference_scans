@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
 law run PlotLikelihoodScan \
-    --hh-model "$MODEL_BOOSTED" \
+    --hh-model "$MODEL_BOOSTED_ALL_NO_KL_M3" \
     --version "$VERSION" \
     --datacards "$C4bcomb" \
     --pois kl,C2V \
-    --scan-parameters kl,-20,30,101:C2V,-0.5,2.5,97 \
+    --scan-parameters kl,-26,36,125:C2V,-0.5,2.5,97 \
     --y-min -0.5 \
     --y-max 2.5 \
-    --x-min -17 \
-    --x-max 28 \
+    --x-min -24 \
+    --x-max 34 \
     --show-parameters kt,CV \
     --show-best-fit True \
     --show-best-fit-error False \
@@ -18,6 +18,8 @@ law run PlotLikelihoodScan \
     --campaign run2 \
     --paper \
     --y-log \
+    --z-min 0.01 \
+    --z-max 1000 \
     --unblinded True  \
     --show-significances 1,2,3,5 \
     --shift-negative-values \
@@ -28,8 +30,8 @@ law run PlotLikelihoodScan \
     --workers 4 \
     --use-snapshot True \
     --Snapshot-workflow "local" \
-    --remove-output 0,a,y
-    #--interpolate-above 999 \
-    #--interpolate-nans \
-    #--interpolation-method rbf,multiquadric,0.2
+    --remove-output 0,a,y \
+    --interpolate-above 999 \
+    --interpolate-nans \
+    --interpolation-method rbf,multiquadric,1,0.2
 
