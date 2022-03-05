@@ -7,6 +7,7 @@ law run PlotUpperLimitsAtPoint \
     --multi-datacards "$MULTICARDS" \
     --file-types "pdf,png" \
     --pois r_qqhh \
+    --show-parameters kl,kt,C2V,CV \
     --UpperLimits-workflow "htcondor" \
     --UpperLimits-tasks-per-job 1 \
     --datacard-names "$MULTINAMES" \

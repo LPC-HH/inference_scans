@@ -6,9 +6,9 @@ law run PlotLikelihoodScan \
     --version "$VERSION" \
     --datacards "$C4bcomb" \
     --pois C2V,CV \
-    --scan-parameters C2V,-1,3,129:CV,-2.5,2.5,101 \
+    --scan-parameters C2V,-1,3,129:CV,-3,3,121 \
     --y-min -2.5 \
-    --y-max 2.5 \
+    --y-max 3 \
     --x-min -1 \
     --x-max 3 \
     --show-parameters kl,kt \
@@ -19,7 +19,7 @@ law run PlotLikelihoodScan \
     --campaign run2 \
     --y-log \
     --z-min 0.0001 \
-    --z-max 1000 \
+    --z-max 10000 \
     --unblinded True  \
     --show-significances 1,2,3,5 \
     --shift-negative-values \

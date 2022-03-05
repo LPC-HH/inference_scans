@@ -1,17 +1,19 @@
 #!/usr/bin/env bash
 
-export DHI_CMS_POSTFIX="Preliminary"
+export DHI_CMS_POSTFIX="Supplementary"
 law run PlotUpperLimitsAtPoint \
-    --hh-model "$MODEL_BOOSTED_MINIMAL" \
+    --hh-model "$MODEL_BOOSTED_CLOSURE" \
     --version "$VERSION" \
     --multi-datacards "$MULTICARDS" \
     --file-types "pdf,png" \
-    --pois r \
+    --pois r_qqhh \
     --show-parameters kl,kt,C2V,CV \
+    --parameter-values C2V=0 \
     --UpperLimits-workflow "htcondor" \
     --UpperLimits-tasks-per-job 1 \
     --datacard-names "$MULTINAMES" \
     --x-log \
+    --x-min 0.03 \
     --campaign run2 \
     --use-snapshot True \
     --Snapshot-workflow "local" \

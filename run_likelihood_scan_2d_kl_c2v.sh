@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+export DHI_CMS_POSTFIX="Preliminary"
 law run PlotLikelihoodScan \
     --hh-model "$MODEL_BOOSTED_ALL_NO_KL_M3" \
     --version "$VERSION" \
@@ -16,7 +17,6 @@ law run PlotLikelihoodScan \
     --recompute-best-fit True \
     --file-types "pdf,png" \
     --campaign run2 \
-    --paper \
     --y-log \
     --z-min 0.01 \
     --z-max 1000 \
