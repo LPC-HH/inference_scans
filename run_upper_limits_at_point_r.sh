@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export DHI_CMS_POSTFIX="Preliminary"
+export DHI_CMS_POSTFIX="Supplementary"
 law run PlotUpperLimitsAtPoint \
     --hh-model "$MODEL_BOOSTED_CLOSURE" \
     --version "$VERSION" \

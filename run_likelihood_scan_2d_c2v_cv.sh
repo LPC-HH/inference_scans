@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export DHI_CMS_POSTFIX="Preliminary"
+export DHI_CMS_POSTFIX="Supplementary"
 law run PlotLikelihoodScan \
     --hh-model "$MODEL_BOOSTED_CLOSURE" \
     --version "$VERSION" \
@@ -19,7 +19,7 @@ law run PlotLikelihoodScan \
     --campaign run2 \
     --y-log \
     --z-min 0.0001 \
-    --z-max 10000 \
+    --z-max 100000 \
     --unblinded True  \
     --show-significances 1,2,3,5 \
     --shift-negative-values \

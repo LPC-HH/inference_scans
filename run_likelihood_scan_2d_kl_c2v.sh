@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export DHI_CMS_POSTFIX="Preliminary"
+#export DHI_CMS_POSTFIX="Preliminary"
 law run PlotLikelihoodScan \
     --hh-model "$MODEL_BOOSTED_ALL_NO_KL_M3" \
     --version "$VERSION" \
@@ -19,7 +19,7 @@ law run PlotLikelihoodScan \
     --campaign run2 \
     --y-log \
     --z-min 0.01 \
-    --z-max 1000 \
+    --z-max 10000 \
     --unblinded True  \
     --show-significances 1,2,3,5 \
     --shift-negative-values \
@@ -33,5 +33,6 @@ law run PlotLikelihoodScan \
     --remove-output 0,a,y \
     --interpolate-above 999 \
     --interpolate-nans \
-    --interpolation-method rbf,multiquadric,1,0.2
+    --interpolation-method rbf,multiquadric,1,0.2 \
+    --paper
 
