@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export DHI_CMS_POSTFIX="Supplementary"
+export DHI_CMS_POSTFIX="Preliminary"
 law run PlotUpperLimits \
     --hh-model "$MODEL_BOOSTED_CLOSURE" \
     --version "$VERSION" \
@@ -8,7 +8,7 @@ law run PlotUpperLimits \
     --xsec fb \
     --pois r_qqhh \
     --frozen-groups signal_norm_xsbr \
-    --scan-parameters C2V,-1,3,17 \
+    --scan-parameters C2V,-1,3,257 \
     --UpperLimits-workflow "htcondor" \
     --UpperLimits-tasks-per-job 1 \
     --file-types "pdf,png" \
