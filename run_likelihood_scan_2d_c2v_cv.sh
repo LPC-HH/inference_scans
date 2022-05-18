@@ -34,3 +34,4 @@ law run PlotLikelihoodScan \
     --interpolate-above 999 \
     --interpolate-nans \
     --interpolation-method rbf,multiquadric
+    #--save-hep-data True

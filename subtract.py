@@ -116,9 +116,18 @@ if __name__ == '__main__':
         up_err[group] = subtract_in_quad(up_err["TOTAL"], up_err_fzg)
         down_err[group] = -subtract_in_quad(down_err["TOTAL"], down_err_fzg)
 
+        logging.info("freeze {key:12}: {poi} = {nom:5.4f} {up_err:+5.4f}/{down_err:+5.4f}".format(
+            key=group,
+            poi=poi,
+            nom=nom,
+            up_err=up_err_fzg,
+            down_err=down_err_fzg
+        )
+        )
+
     for key in sorted(up_err, key=up_err.get, reverse=True):
-        percent = 100.*(up_err[key] - down_err[key]) / (up_err["TOTAL"] - down_err["TOTAL"])
-        logging.info("{key:12}: {poi} = {nom:4.2f} {up_err:+4.2f}/{down_err:+4.2f}: {percent:3.0f}% w.r.t. TOTAL (symmetrized)".format(
+        percent = 100.*(up_err[key] - down_err[key]) / (2*nom)
+        logging.info("{key:12}: {poi} = {nom:5.4f} {up_err:+5.4f}/{down_err:+5.4f}: {percent:3.0f}% w.r.t. central value (symmetrized)".format(
             key=key,
             poi=poi,
             nom=nom,

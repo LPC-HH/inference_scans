@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
 export DHI_CMS_POSTFIX="Supplementary"
-law run PlotUpperLimits \
+law run PlotMultipleUpperLimits \
     --hh-model "$MODEL_BOOSTED_CLOSURE" \
     --version "$VERSION" \
-    --datacards "$C4bcomb" \
+    --multi-datacards "$C4bcomb:$C4bggf:$C4bvbf" \
+    --datacard-names "Combined,ggF cat.,VBF cat." \
     --xsec fb \
     --pois r \
     --frozen-groups signal_norm_xsbr \
@@ -18,7 +19,6 @@ law run PlotUpperLimits \
     --Snapshot-workflow "local" \
     --y-log \
     --remove-output 0,a,y \
-    --show-parameters "kl,kt,C2V" \
+    --show-parameters "kl,kt,CV" \
     --br bbbb \
-    --save-ranges \
-    --save-hep-data True
+    --save-ranges

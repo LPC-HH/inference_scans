@@ -18,4 +18,4 @@ law run PlotMultipleLikelihoodScans \
     --Snapshot-workflow "local" \
     --remove-output 0,a,y \
     --show-parameters "kt,C2V,CV" \
-    --y-log False
+    --y-log True

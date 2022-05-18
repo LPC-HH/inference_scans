@@ -1,24 +1,23 @@
 #!/usr/bin/env bash
 
 export DHI_CMS_POSTFIX="Supplementary"
-law run PlotUpperLimits \
+law run PlotUpperLimitsAtPoint \
     --hh-model "$MODEL_BOOSTED_CLOSURE" \
     --version "$VERSION" \
-    --datacards "$C4bcomb" \
-    --xsec fb \
-    --pois r \
-    --frozen-groups signal_norm_xsbr \
-    --scan-parameters CV,-2,2,129 \
+    --multi-datacards "$MULTICARDS" \
+    --file-types "pdf,png" \
+    --pois r_qqhh \
+    --show-parameters kl,kt,C2V,CV \
     --UpperLimits-workflow "htcondor" \
     --UpperLimits-tasks-per-job 1 \
-    --file-types "pdf,png" \
+    --datacard-names "$MULTINAMES" \
+    --x-log \
+    --x-min 0.03 \
     --campaign run2 \
-    --unblinded True \
     --use-snapshot True \
     --Snapshot-workflow "local" \
-    --y-log \
+    --unblinded True \
     --remove-output 0,a,y \
-    --show-parameters "kl,kt,C2V" \
-    --br bbbb \
-    --save-ranges \
+    --h-lines 1 \
+    --datacard-order 4,3,2,1,0 \
     --save-hep-data True

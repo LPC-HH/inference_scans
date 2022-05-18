@@ -20,4 +20,5 @@ law run PlotUpperLimits \
     --remove-output 0,a,y \
     --show-parameters "kl,kt,CV" \
     --br bbbb \
-    --save-ranges
+    --save-ranges \
+    --save-hep-data True

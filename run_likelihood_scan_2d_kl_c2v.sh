@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#export DHI_CMS_POSTFIX="Preliminary"
+# export DHI_CMS_POSTFIX="Preliminary"
 law run PlotLikelihoodScan \
     --hh-model "$MODEL_BOOSTED_ALL_NO_KL_M3" \
     --version "$VERSION" \
@@ -35,4 +35,5 @@ law run PlotLikelihoodScan \
     --interpolate-nans \
     --interpolation-method rbf,multiquadric,1,0.2 \
     --paper
+    #--save-hep-data True
 
